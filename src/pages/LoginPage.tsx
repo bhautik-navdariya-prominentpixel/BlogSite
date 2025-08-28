@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-import type { SignUpModel } from "../models/SignUpModel";
-import { useRef, useState, type ChangeEvent, type FormEvent } from "react";
-import SimpleReactValidator from "simple-react-validator";
 import { loginUser } from "../helpers/AuthHelper";
 import { useDispatch } from "react-redux";
 import { authActions } from "../store/auth-slice";
