@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ===== Custom Global Defaults for Rich Text / TinyMCE Output ===== */
+@layer base {
+  /* Headings */
+  h1 {
+    @apply text-4xl font-bold mt-6 mb-4 leading-tight;
+  }
+  h2 {
+    @apply text-3xl font-semibold mt-5 mb-3 leading-snug;
+  }
+  h3 {
+    @apply text-2xl font-semibold mt-4 mb-2;
+  }
+  h4 {
+    @apply text-xl font-medium mt-3 mb-2;
+  }
+  h5 {
+    @apply text-lg font-medium mt-2 mb-1;
+  }
+  h6 {
+    @apply text-base font-medium mt-2 mb-1 uppercase tracking-wide;
+  }
+
+  /* Paragraphs & Text */
+  p {
+    @apply text-base leading-relaxed mb-4;
+  }
+  strong {
+    @apply font-bold;
+  }
+  em {
+    @apply italic;
+  }
+  small {
+    @apply text-sm text-gray-600 dark:text-gray-400;
+  }
+
+  /* Links */
+  a {
+    @apply text-blue-600 hover:text-blue-800;
+  }
+
+  /* Lists */
+  ul {
+    @apply list-disc list-inside mb-4 pl-4;
+  }
+  ol {
+    @apply list-decimal list-inside mb-4 pl-4;
+  }
+  li {
+    @apply mb-1;
+  }
+
+  /* Blockquote */
+  blockquote {
+    @apply border-l-4 border-gray-400 pl-4 italic text-gray-700 dark:text-gray-300 my-4;
+  }
+
+  /* Code & Preformatted */
+  code {
+    @apply font-mono bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded text-sm;
+  }
+  pre {
+    @apply font-mono text-sm bg-gray-100 dark:bg-gray-900 p-4 rounded overflow-x-auto mb-4;
+  }
+
+  /* Images */
+  /* img {
+    @apply max-w-full h-auto rounded-md my-4;
+  } */
+
+  /* Tables */
+  table {
+    @apply w-full border-collapse my-4;
+  }
+  th {
+    @apply border border-gray-300 dark:border-gray-700 px-3 py-2 bg-gray-100 dark:bg-gray-800 text-left;
+  }
+  td {
+    @apply border border-gray-300 dark:border-gray-700 px-3 py-2;
+  }
+
+  /* Horizontal rule */
+  hr {
+    @apply border-t border-gray-300 dark:border-gray-700 my-6;
+  }
+}
