@@ -42,7 +42,7 @@ function App() {
         },
       ],
     },
-  ]);
+  ], {basename: "/BlogSite/dist/"});
   return <RouterProvider router={router}></RouterProvider>;
 }
 
